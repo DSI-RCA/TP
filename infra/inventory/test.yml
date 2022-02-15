@@ -1,0 +1,10 @@
+---
+all:
+  hosts:
+    netbox-ovh-test:
+      ansible_host: 10.0.16.82
+      ansible_user: root
+  children:
+    netbox:
+      hosts:
+        netbox-ovh-test:
