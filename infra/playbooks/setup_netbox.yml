@@ -1,0 +1,21 @@
+---
+# Playbooks for Netbox & dependancies installation
+
+- name: Install Netbox Service
+  hosts: "netbox"
+  pre_tasks:
+    - name: Install Basic Utilities
+      include_tasks: includes/basic_setup.yml
+
+    - name: Install & Setup Nginx
+      include_tasks: includes/nginx.yml
+
+    - name: Install & Setup Postgres
+      include_tasks: includes/postgres.yml
+
+  roles:
+    - role: netbox
+      netbox_database_name: "netbox"
+      netbox_database_user: "netbox"
+      netbox_database_pass: "chohThon9Yoo0ahw"
+      netbox_secret_key: "zo4iela3yeeNaebohtouzueF"

@@ -1,0 +1,21 @@
+---
+- name: Install Packages
+  apt:
+    name:
+      - gpg
+      - sudo
+      - ufw
+      - vim
+
+- name: enable FireWall
+  ufw:
+    state: enabled
+
+- name: Allow SSH
+  ufw:
+    rule: allow
+    port: '22'
+
+- name: Enable deny Policy
+  ufw:
+    policy: deny

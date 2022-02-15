@@ -1,0 +1,24 @@
+---
+- name: Install Nginx
+  apt:
+    name:
+      - nginx
+      - nginx-extras
+
+- name: Remove Default
+  file:
+    path: "/etc/nginx/sites-enabled/default"
+    state: absent
+
+- name: Set Netbox vhost
+  copy:
+    src: "files/nginx/netbox-test.rca.fr"
+    dest: "/etc/nginx/sites-available/netbox-test.rca.fr"
+    owner: root
+    group: root
+    mode: "0644"
+
+- name: Reload Nginx
+  systemd:
+    name: nginx
+    state: reloaded
