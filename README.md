@@ -8,7 +8,7 @@ Celui-ci à pour vocation de nous permettre d'estimer votre niveau technique et 
 Pour cela, nous vous avons mis à disposition une VM Debian avec un applicatif Web :
  - ip : <address_ip>
  - user: root
- - mot de passe: Ixe2Nohpheecaepa
+ - mot de passe: communiqué par e-mail 
  
 Vous disposez d'un accès SSH sur la VM et l'applicatif est joignable sur l'url "https://<address_ip>".
 
