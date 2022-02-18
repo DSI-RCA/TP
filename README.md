@@ -6,11 +6,11 @@ Bienvenue dans ce test technique !
 Celui-ci à pour vocation de nous permettre d'estimer votre niveau technique et comprendre la réflexion suivie pour la résolution des problèmes du quotidien :)
 
 Pour cela, nous vous avons mis à disposition une VM Debian avec un applicatif Web :
- - ip : <address_ip>
- - user: root
+ - ip : 46.105.28.233 
+ - user: debian
  - mot de passe: communiqué par e-mail 
  
-Vous disposez d'un accès SSH sur la VM et l'applicatif est joignable sur l'url "https://<address_ip>".
+Vous disposez d'un accès SSH sur la VM et l'applicatif est joignable sur l'url "https://46.105.28.233".
 
 Malheuresement le Chaos Monkey est passé par là, charge à vous de réparer les dégats !
 
@@ -19,7 +19,7 @@ Pour vous aidez, je vous invite à suivre les étapes ci-dessous et à nous indi
 Étapes :
 ----------
 
-1. Se connecter au serveur à l'aide d'une clé SSH
+1. Se connecter au serveur à l'aide d'une clé SSH sur l'utilisateur "root"
 
 2. Rétablir le fonctionnement du serveur Web 
 
