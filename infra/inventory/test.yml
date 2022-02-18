@@ -2,7 +2,7 @@
 all:
   hosts:
     netbox-ovh-test:
-      ansible_host: 10.0.16.82
+      ansible_host: 46.105.28.233
       ansible_user: root
   children:
     netbox:
