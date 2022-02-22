@@ -15,7 +15,7 @@
 
   roles:
     - role: netbox
-      netbox_database_name: "netbox"
-      netbox_database_user: "netbox"
-      netbox_database_pass: "chohThon9Yoo0ahw"
-      netbox_secret_key: "zo4iela3yeeNaebohtouzueF"
+      # netbox_database_name: "netbox"
+      # netbox_database_user: "netbox"
+      # netbox_database_pass: "chohThon9Yoo0ahw"
+      # netbox_secret_key: "zo4iela3yeeNaebohtouzueF"

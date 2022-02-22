@@ -20,14 +20,19 @@ Pour vous aidez, je vous invite à suivre les étapes ci-dessous et à nous indi
 ----------
 
 1. Se connecter au serveur à l'aide d'une clé SSH sur l'utilisateur "root"
+ - J'ai copié ma clef dans le fichier /root/.ssh/authorized_keys
 
 2. Rétablir le fonctionnement du serveur Web 
+ - le service était stoppé, j'ai redémarré le service avec la commande "systemctl start nginx"
 
 3. Vérifier les ports ouverts sur le pare-feu (ufw)
+ - ouverture des ports 80 et 443 pour le service web
 
 4. Rétablir le fonctionnement du service de base de données
+ - le service était stoppé, j'ai redémarré le service avec la commande "systemctl start postgresql"
 
 5. Rétablir le fonctionnement de l'applicatif Python
+ - dans le fichier gunicorn.py, l'adresse d'écoute était l'adresse IP du serveur au lieu de l'adresse locahost
 
 Ansible
 ---------

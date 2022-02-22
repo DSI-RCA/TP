@@ -18,6 +18,13 @@
     group: root
     mode: "0644"
 
+- name: Create link Netbox vhost
+      file:
+        src: "/etc/nginx/sites-available/netbox-test.rca.fr"
+        dest: "/etc/nginx/sites-enabled/netbox-test.rca.fr"
+        state: link
+      become: yes
+
 - name: Reload Nginx
   systemd:
     name: nginx
